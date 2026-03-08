@@ -1,0 +1,129 @@
+/*logo estilos*/
+.label-container {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 32px;
+    font-family: cursive;
+    color: #3b2b2b;
+    background: #f8f3f3;
+    border: 2px solid #b88a7a;
+    border-radius: 40px;
+    position: relative;
+}
+
+.label-container::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    right: 10px;
+    height: 10px;
+    border-top: 2px solid #b88a7a;
+    border-radius: 50%;
+}
+
+.label-container::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+    right: 10px;
+    height: 10px;
+    border-bottom: 2px solid #b88a7a;
+    border-radius: 50%;
+}
+/*Menu estilos */
+.contenedor_menu{
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor_menu > li{
+    font-size: 24px;
+    list-style: none;
+    margin-right: 50px;
+}
+.menu  p{
+    margin-left: 30px;
+    height: 1px;
+    width: 400px;
+    margin-top: 0;
+    background-color: #992929;
+}
+
+/*productos card */
+.carta_button{
+    background-color: #3763A4;
+    width: 142px;
+    height: 43px;
+    border-radius: 18px;
+    font-size: 20px;
+    color: #fff;
+}
+.card_carne, .card_papas, .card_licor, .card_leche{
+    border: 2px solid #992929;
+    border-radius: 6px;
+    font-family: cursive;
+    padding: 20px;
+}
+.card_carne,.card_papas{
+    width: 244px;
+    height: 340px;
+}
+/*esto es donde debes modificar porfavor no malogres mi codigo */
+.card_licor{
+    width: 400px;
+    height: 243px;
+    position: relative;
+}
+.card_descripcion{
+    font-size: 20px;
+}
+.card_licor > .card_descripcion{ 
+    width: 150px;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+
+.card_leche{
+    width: 672px;
+    height: 169px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.card_titulo{
+        font-size: 32px;
+}
+.card_imagen{
+    width: 207px;
+    height: 116px;
+}
+.contenedor_redes{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #fff;
+
+}
+.contenedor_derechos{
+    color: #fff;
+}
+.copyrigth{
+    text-align: center;
+    color: #000;
+}
+.footer_line{
+    background-color: #fff;
+    height: 2px;
+}
+.red_whatsaap{
+    font-size: 40px;
+    color: #32D852;
+}
