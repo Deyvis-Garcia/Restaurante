@@ -1,28 +1,28 @@
 import './App.css';
+import {Logo,ProductoCard,Menu,Footer,Button} from "./componentes/portada.jsx"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+    <>
+      <header>
+        <Logo />
+        <Menu />
       </header>
-    </div>
+      <main>
+        <div>
+          <h1>Donde cada bocado cuenta una historia</h1>
+          <p>Explora nuestra carta con una exquisita variedad</p>
+          <Button text=". Ver carta"/>
+        </div>
+        <ProductoCard clase="card_carne" titulo="Costillas de carne" imagen="carne" descripcion="esto es lo mejor que he probado en mi vida"/>
+        <ProductoCard clase="card_papas" titulo="Carshel de papas" imagen="papas" descripcion="Carne de res con papas glaciadas de miel"/>
+        <ProductoCard clase="card_licor" titulo="Licores matzfel" imagen="licor" descripcion="Alta calidad de sabor, tradición en cada botella"/>
+        <ProductoCard clase="card_leche" titulo="Frexhalt de milk" imagen="leche" descripcion="Fresas con arandanos y leche de vaca con una pisaca de licor"/>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
